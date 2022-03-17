@@ -78,6 +78,8 @@ class CommitWidget(urwid.Text):
             if not result:
                 self.ui.chp_failed(self, err)
             else:
+                self.ui.feedback(f'{self.commit.sha} ({self.commit.description}) applied successfully.')
+                self.ui.save()
                 self.ui.remove_commit(self)
 
     async def denominate(self) -> None:
