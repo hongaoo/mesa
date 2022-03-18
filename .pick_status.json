@@ -1,5 +1,317 @@
 [
     {
+        "sha": "a3e9388953f60d22c188d0e40bb4187be9048800",
+        "description": "features: fix some vk extension listings",
+        "nominated": false,
+        "nomination_type": null,
+        "resolution": 4,
+        "because_sha": null
+    },
+    {
+        "sha": "cdaa3a899cf08858274a79d4c806f26881bead31",
+        "description": "anv: Use layerCount for clears and transitions in BeginRendering",
+        "nominated": false,
+        "nomination_type": 1,
+        "resolution": 4,
+        "because_sha": "3501a3f9ed92831ed039f0d54bf295af41ed0195"
+    },
+    {
+        "sha": "4f284254e485d1631e0b13ffd793387cd14a19cd",
+        "description": "v3dv: support importing external semaphores",
+        "nominated": false,
+        "nomination_type": null,
+        "resolution": 4,
+        "because_sha": null
+    },
+    {
+        "sha": "fa1b10f36d413448e69cd2a5e29b1f51a152af67",
+        "description": "v3dv: lock around noop job submits",
+        "nominated": false,
+        "nomination_type": null,
+        "resolution": 4,
+        "because_sha": null
+    },
+    {
+        "sha": "daa865fb2c6c9fe8c8529f299552b48aeb12bf24",
+        "description": "v3dv: fix semaphore wait from CPU job",
+        "nominated": false,
+        "nomination_type": null,
+        "resolution": 4,
+        "because_sha": null
+    },
+    {
+        "sha": "3b8ab8a9ce70495b39f3b40188b38fe1c3d93c82",
+        "description": "v3dv: don't signal semaphores/fences from a wait thread",
+        "nominated": false,
+        "nomination_type": null,
+        "resolution": 4,
+        "because_sha": null
+    },
+    {
+        "sha": "03840bfcd15c9d584a9368a86b783c3794112ff1",
+        "description": "v3dv: fix temporary imports of semaphores and fences with multisync",
+        "nominated": false,
+        "nomination_type": null,
+        "resolution": 4,
+        "because_sha": null
+    },
+    {
+        "sha": "5a11a2fb6cb461ff3a3c565e669b91aac8d66ef0",
+        "description": "v3dv: don't expose image load/store features for linear images",
+        "nominated": false,
+        "nomination_type": null,
+        "resolution": 4,
+        "because_sha": null
+    },
+    {
+        "sha": "0590ce1362405449d77018123a7b1588f5a681a0",
+        "description": "v3dv: return early on image to buffer blit copies if image is linear",
+        "nominated": false,
+        "nomination_type": null,
+        "resolution": 4,
+        "because_sha": null
+    },
+    {
+        "sha": "397f4963ed00d99c8bda18b17ca93dc4ecc6e202",
+        "description": "v3dv: TFU destination must be UIF",
+        "nominated": false,
+        "nomination_type": null,
+        "resolution": 4,
+        "because_sha": null
+    },
+    {
+        "sha": "9e20d6878550ccfdafc9c27b5888ac4e13d1ec44",
+        "description": "zink: add some nice docs for batch usage and tracking",
+        "nominated": false,
+        "nomination_type": null,
+        "resolution": 4,
+        "because_sha": null
+    },
+    {
+        "sha": "3472fed4da18d99622517af5aa5c32b1f797c299",
+        "description": "zink: set vbo resource usage on bind",
+        "nominated": false,
+        "nomination_type": null,
+        "resolution": 4,
+        "because_sha": null
+    },
+    {
+        "sha": "8294d454245d4318befac7c8915e55db3d47cefd",
+        "description": "zink: only update usage on buffer rebind if rebinds occurred",
+        "nominated": true,
+        "nomination_type": 0,
+        "resolution": 1,
+        "because_sha": null
+    },
+    {
+        "sha": "7da211e24fe14d8b107461bdfcb3b8d67212f88a",
+        "description": "zink: force-add usage when adding last-ref tracking",
+        "nominated": true,
+        "nomination_type": 0,
+        "resolution": 1,
+        "because_sha": null
+    },
+    {
+        "sha": "e3d905ec3972af3a2acb6ac921c5111ab6ba0873",
+        "description": "v3dv/pipeline: use new helper vk_shader_module_to_nir",
+        "nominated": false,
+        "nomination_type": null,
+        "resolution": 4,
+        "because_sha": null
+    },
+    {
+        "sha": "8b71118aa066ab125b7440912ed1e14da79c9451",
+        "description": "anv: flush tile cache with query copy command",
+        "nominated": true,
+        "nomination_type": 0,
+        "resolution": 1,
+        "because_sha": null
+    },
+    {
+        "sha": "4e30da7874e6586c7ac94cd34560c782d0f9678d",
+        "description": "anv: emit timestamp & availability using the same part of CS",
+        "nominated": true,
+        "nomination_type": 0,
+        "resolution": 1,
+        "because_sha": null
+    },
+    {
+        "sha": "730a294b9072b8807c22a59fcedec4b6ab278081",
+        "description": "v3dv: implement VK_EXT_line_rasterization",
+        "nominated": false,
+        "nomination_type": null,
+        "resolution": 4,
+        "because_sha": null
+    },
+    {
+        "sha": "22759e91740e589989e019f92beaa3cd5ba299bb",
+        "description": "v3dv: add subpixel precision definition",
+        "nominated": false,
+        "nomination_type": null,
+        "resolution": 4,
+        "because_sha": null
+    },
+    {
+        "sha": "b53dda6da8a6b35dbd26f5d9bafb18417cffd154",
+        "description": "broadcom: add line rasterization mode to packet definition",
+        "nominated": false,
+        "nomination_type": null,
+        "resolution": 4,
+        "because_sha": null
+    },
+    {
+        "sha": "102ae4bdc89c1c11464e4f9816ee79eae1ac81b3",
+        "description": "broadcom: add on-disk cache debug option",
+        "nominated": false,
+        "nomination_type": null,
+        "resolution": 4,
+        "because_sha": null
+    },
+    {
+        "sha": "4468db20f7f335394cbac489e6c0ade86356a44d",
+        "description": "v3d: add support for on-disk shader cache",
+        "nominated": false,
+        "nomination_type": null,
+        "resolution": 4,
+        "because_sha": null
+    },
+    {
+        "sha": "a929bafc775f7316b2e7a0a186610b8155d58ac5",
+        "description": "panvk: Only implement Get*MemoryRequirements2",
+        "nominated": false,
+        "nomination_type": null,
+        "resolution": 4,
+        "because_sha": null
+    },
+    {
+        "sha": "bc8b30ba55a85e0927437aa5a1497591e09a1c25",
+        "description": "panvk: Drop QueueBindSparse",
+        "nominated": false,
+        "nomination_type": null,
+        "resolution": 4,
+        "because_sha": null
+    },
+    {
+        "sha": "2fc2ec17db911ad839e634c7507909bf14a6ca48",
+        "description": "panvk: Drop BindImage/BufferMemory",
+        "nominated": false,
+        "nomination_type": null,
+        "resolution": 4,
+        "because_sha": null
+    },
+    {
+        "sha": "f9b773a41784c09f54af8b2044ed8396f471ad6c",
+        "description": "panvk: Implement VK_KHR_copy_commands2",
+        "nominated": false,
+        "nomination_type": null,
+        "resolution": 4,
+        "because_sha": null
+    },
+    {
+        "sha": "b573b226285b09f8c11e7fe29437a2bdc586bb10",
+        "description": "panvk: Implement VK_KHR_synchronization2",
+        "nominated": false,
+        "nomination_type": null,
+        "resolution": 4,
+        "because_sha": null
+    },
+    {
+        "sha": "39c395d1d273fdb3692fe07b51313cb869cf4dd3",
+        "description": "panvk: Move core properties into their respective core structs",
+        "nominated": false,
+        "nomination_type": null,
+        "resolution": 4,
+        "because_sha": null
+    },
+    {
+        "sha": "ff30dd11a7fa4359098d4f83e011c5771b739a72",
+        "description": "panvk: Re-arrange GetPhysicalDeviceProperties2",
+        "nominated": false,
+        "nomination_type": null,
+        "resolution": 4,
+        "because_sha": null
+    },
+    {
+        "sha": "34139d9f51a73e1dbc483125ab8673b75f24c869",
+        "description": "panvk: Add a 1.3 features struct",
+        "nominated": false,
+        "nomination_type": null,
+        "resolution": 4,
+        "because_sha": null
+    },
+    {
+        "sha": "dd03dba7fdb8f4d9fefe8f272aecd08ab27d87c9",
+        "description": "panvk: Re-arrange GetPhysicalDeviceFeatures2",
+        "nominated": false,
+        "nomination_type": null,
+        "resolution": 4,
+        "because_sha": null
+    },
+    {
+        "sha": "5c1302f47c2226f534f594c5766fce4aa1577535",
+        "description": "v3dv: expose VK_EXT_image_drm_format_modifier",
+        "nominated": false,
+        "nomination_type": null,
+        "resolution": 4,
+        "because_sha": null
+    },
+    {
+        "sha": "cdd1b86591a1b0fa8954e7e1c8d3290fdb3c8b78",
+        "description": "lavapipe: add EXT_texel_buffer_alignment support.",
+        "nominated": false,
+        "nomination_type": null,
+        "resolution": 4,
+        "because_sha": null
+    },
+    {
+        "sha": "efa724133f6e454b209837713ad4218ade6eb7d0",
+        "description": "zink: flag sample locations for re-set on batch flush",
+        "nominated": true,
+        "nomination_type": 0,
+        "resolution": 5,
+        "because_sha": null
+    },
+    {
+        "sha": "19330eeb1d65c631ce11a0be1cb13437c6c28491",
+        "description": "intel/fs: Force destination types on DP4A instructions",
+        "nominated": true,
+        "nomination_type": 1,
+        "resolution": 5,
+        "because_sha": "0f809dbf4048cbd89c5cf28dbb9ab38cc726fe2a"
+    },
+    {
+        "sha": "3bd9b25060969a7a6533070aaceae5512f71409f",
+        "description": "intel: change INTEL_MEASURE output to microseconds",
+        "nominated": false,
+        "nomination_type": null,
+        "resolution": 4,
+        "because_sha": null
+    },
+    {
+        "sha": "2e6d14cc7b7a81e80687fa20f932fa2d9b37e535",
+        "description": "intel: increase INTEL_MEASURE batch/buffer sizes",
+        "nominated": false,
+        "nomination_type": null,
+        "resolution": 4,
+        "because_sha": null
+    },
+    {
+        "sha": "e0c9032db850ba6b5029b5f89161d39141897346",
+        "description": "anv: add indirect draw to INTEL_MEASURE",
+        "nominated": false,
+        "nomination_type": null,
+        "resolution": 4,
+        "because_sha": null
+    },
+    {
+        "sha": "f452317849d9b494dbb83792ee051a473bfe2207",
+        "description": "clover/nir: respect lower to scalar options.",
+        "nominated": false,
+        "nomination_type": null,
+        "resolution": 4,
+        "because_sha": null
+    },
+    {
         "sha": "f34260bbf74ec4b9c251d17314a580d1f0334810",
         "description": "vulkan: update vk video headers for new vulkan headers.",
         "nominated": false,
